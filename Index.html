@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VECTOR VOID Forum (Archive)</title>
+  <style>
+    body {
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 13px;
+      background-color: #001133;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    a { color: #66ccff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrapper {
+      width: 900px;
+      margin: 20px auto 40px auto;
+      background-color: #000822;
+      border: 1px solid #335588;
+      padding: 10px 15px 20px 15px;
+    }
+    .header {
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #335588;
+      margin-bottom: 15px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #66ccff;
+    }
+    .header small {
+      color: #bbbbbb;
+    }
+    .topics {
+      margin-bottom: 25px;
+    }
+    .topics h2 {
+      font-size: 14px;
+      margin: 5px 0 8px 0;
+      color: #ffdd66;
+      border-bottom: 1px solid #335588;
+      padding-bottom: 4px;
+    }
+    .topics table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .topics th, .topics td {
+      padding: 4px 5px;
+      border-bottom: 1px solid #1b2745;
+    }
+    .topics th {
+      background-color: #0b1633;
+      color: #cccccc;
+      text-align: left;
+    }
+    .topics tr:nth-child(even) td {
+      background-color: #020b22;
+    }
+    .topics tr:nth-child(odd) td {
+      background-color: #02061a;
+    }
+
+    .thread {
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 1px dotted #335588;
+    }
+    .thread h2 {
+      font-size: 16px;
+      color: #ffdd66;
+      margin: 0 0 5px 0;
+    }
+    .thread-meta {
+      font-size: 11px;
+      color: #bbbbbb;
+      margin-bottom: 10px;
+    }
+    .post {
+      border: 1px solid #223355;
+      background-color: #020b22;
+      margin-bottom: 10px;
+      padding: 6px 8px;
+    }
+    .post-header {
+      font-size: 11px;
+      color: #cccccc;
+      margin-bottom: 4px;
+      border-bottom: 1px solid #18213c;
+      padding-bottom: 3px;
+    }
+    .post-user {
+      font-weight: bold;
+      color: #66ccff;
+    }
+    .post-date {
+      float: right;
+      color: #888888;
+    }
+    .post-body {
+      font-size: 12px;
+      color: #ffffff;
+      white-space: pre-wrap;
+    }
+    .back-top {
+      text-align: right;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+    .system-note {
+      font-size: 11px;
+      color: #aaaaaa;
+      font-style: italic;
+      margin: 4px 0 8px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header" id="top">
+    <h1>VECTOR VOID // MESSAGE BOARD</h1>
+    <small>Retro Gaming &amp; Arcade Discussion &mdash; circa 1992&ndash;1995 (archived)</small>
+  </div>
+
+  <!-- TOPIC LIST -->
+  <div class="topics">
+    <h2>Темы форума</h2>
+    <table>
+      <tr>
+        <th>Тема</th>
+        <th>Автор</th>
+        <th>Ответов</th>
+        <th>Последний пост</th>
+      </tr>
+      <tr>
+        <td><a href="#thread-snackman">Лучший порт Snack-Man: аркада vs домашние версии</a></td>
+        <td>8bitFreak</td>
+        <td>12</td>
+        <td>02.06.1994</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-astralvoid">Помогите найти ROM The Astral Void (существует ли вообще?)</a></td>
+        <td>ROMHunter</td>
+        <td>9</td>
+        <td>15.09.1994</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-serpents">Serpents &amp; Sepulchers — как пройти уровень с библиотекой</a></td>
+        <td>LabyrinthLord</td>
+        <td>7</td>
+        <td>23.11.1993</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-cybertrax">Cybertrax: ваши времена на трассе “Orion Loop”</a></td>
+        <td>TimeAttack</td>
+        <td>15</td>
+        <td>19.04.1995</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-mousepuncher">Mouse Puncher: есть ли скрытые комбо?</a></td>
+        <td>CheeseMaster</td>
+        <td>6</td>
+        <td>09.08.1993</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-repair">Ремонт старых кабинетов: чем чистить контакты плат?</a></td>
+        <td>CRT_Wizard</td>
+        <td>18</td>
+        <td>30.03.1995</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-xxaagreus">Кто-нибудь помнит Xxaagreus?</a></td>
+        <td>RetroJunkie</td>
+        <td>32</td>
+        <td>08.02.1995</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-photos">Фото ваших локальных аркадных залов</a></td>
+        <td>ArcadeHunter</td>
+        <td>21</td>
+        <td>12.05.1995</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-gamesplus">Кто помнит GamesPLUS на SNES?</a></td>
+        <td>CartCollector</td>
+        <td>10</td>
+        <td>17.10.1994</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-warriors">Warriors of History или Warriors of Future — что лучше и почему</a></td>
+        <td>PixelGeneral</td>
+        <td>14</td>
+        <td>05.01.1995</td>
+      </tr>
+      <tr>
+        <td><a href="#thread-tuktuk">Странные баги в Crazy Tuk-tuk (мне одному так повезло?)</a></td>
+        <td>GlitchPriest</td>
+        <td>8</td>
+        <td>28.02.1995</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- THREAD: XXAAGREUS -->
+  <div class="thread" id="thread-xxaagreus">
+    <h2>Кто-нибудь помнит Xxaagreus?</h2>
+    <div class="thread-meta">
+      🌐 ФОРУМ VECTOR VOID &nbsp; | &nbsp; Тема создана: март 1992 &nbsp; | &nbsp; Обновлена: февраль 1995
+    </div>
+    <div class="system-note">
+      (создана 3 года назад — март 1992)
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">RetroJunkie</span>
+        <span class="post-date">1 марта 1992</span>
+      </div>
+      <div class="post-body">
+Окей, народ, возможно, я схожу с ума, но: кто-нибудь помнит аркадную игру Xxaagreus?
+Я клянусь, что слышал о ней где-то в 80-х, когда ходил в тот старый зал возле озера (не помню название).
+Но я не могу НИЧЕГО найти в сети — ни картинок, ни списка игр, ни даже упоминаний.
+Она точно существовала? Или это у меня ложные воспоминания?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CRT_Wizard</span>
+        <span class="post-date">2 марта 1992</span>
+      </div>
+      <div class="post-body">
+Имя звучит знакомо, но может путаница с “Xenogears”?
+В 80-х похожие названия были десятками.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">TokenEater</span>
+        <span class="post-date">3 марта 1992</span>
+      </div>
+      <div class="post-body">
+Нет, нет, я ТОЧНО помню.
+Там был высокий автомат, тёмный экран, и игра была как платформер, но не совсем.
+Я был слишком мелкий, чтобы играть нормально, но атмосфера пугала.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Quarter4Life</span>
+        <span class="post-date">3 марта 1992</span>
+      </div>
+      <div class="post-body">
+Может быть, вы про “Serpents &amp; Sepulchers”? У той была мрачная эстетика.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">RetroJunkie</span>
+        <span class="post-date">4 марта 1992</span>
+      </div>
+      <div class="post-body">
+Не-а.
+Название было именно Xxaagreus.
+Как будто про какого-то бога из мифов… это всё, что я помню.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GlitchPriest</span>
+        <span class="post-date">8 марта 1992</span>
+      </div>
+      <div class="post-body">
+Я видел пост когда-то про игру, которая «выключалась сама». Может быть это она?
+Но инфу удалили.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">DeadUnits</span>
+        <span class="post-date">11 марта 1992</span>
+      </div>
+      <div class="post-body">
+А я слышал, что Xxaagreus появлялась в разных городах на пару недель, потом исчезала.
+Это была городская легенда среди коллекционеров.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Sinkerly308</span>
+        <span class="post-date">13 марта 1992</span>
+      </div>
+      <div class="post-body">
+Xxaagreus существовала.
+Её делала компания Vertex Electronica в Deep Lake, Нью-Мексико.
+Компания закрылась в 1999.
+Источник — я. Я там стажировался летом, когда игра была в разработке.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">RetroJunkie</span>
+        <span class="post-date">13 марта 1992</span>
+      </div>
+      <div class="post-body">
+СЕРЬЁЗНО?
+Можешь рассказать, какой она была?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CRT_Wizard</span>
+        <span class="post-date">13 марта 1992</span>
+      </div>
+      <div class="post-body">
+Можешь доказать, что ты работал в Vertex? Фото? Пропуск?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">TokenEater</span>
+        <span class="post-date">13 марта 1992</span>
+      </div>
+      <div class="post-body">
+Это ТА игра с «секретными уровнями»?
+Кто-то раньше писал об этом, но инфу удалили.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Sinkerly308</span>
+        <span class="post-date">21 марта 1992</span>
+      </div>
+      <div class="post-body">
+Да, были секретные уровни.
+Но к ним нельзя добраться через обычное прохождение.
+Доступ был только “нестандартными способами”.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GlitchPriest</span>
+        <span class="post-date">21 марта 1992</span>
+      </div>
+      <div class="post-body">
+Что значит «нестандартными способами»???
+Типа пасхалки? Или как-то навредить персонажу?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Quarter4Life</span>
+        <span class="post-date">21 марта 1992</span>
+      </div>
+      <div class="post-body">
+Ты вообще можешь описать геймплей?
+Потому что никто его не помнит одинаково.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ArcadeHunter</span>
+        <span class="post-date">6 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Ребята, это НЕ ШУТКА.
+На Vector Void появился пост, что Xxaagreus нашли. Настоящий кабинет.
+Я собираю инфу, но кто-то уже должен был увидеть?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">RetroJunkie</span>
+        <span class="post-date">6 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Если это байт, я убьюсь.
+Если это не байт…
+Я не знаю, что тогда.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Quarter4Life</span>
+        <span class="post-date">6 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Ссылка? Или снова слухи?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ArcadeHunter</span>
+        <span class="post-date">7 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Пользователь FGoldman — владелец Galaxia Arcade в Deep Lake — выложил фото кабины.
+Говорит, купил его на аукционе складских лотов в Me+My Self Storage.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GlitchPriest</span>
+        <span class="post-date">7 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Тот самый склад за городом, где постоянно отключается свет?
+Я там как-то потерялся в проходах — ненавижу то место.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CRT_Wizard</span>
+        <span class="post-date">7 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Легенду подняли из могилы.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">FGoldman</span>
+        <span class="post-date">8 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Да, это я. Кабинет настоящей Xxaagreus стоит теперь у меня в Galaxia Arcade.
+Приглашаю всех, кто интересуется не легендами, а фактами.
+Распечатал. Подключил. Игра работает.
+Я делаю бесплатную игру каждому, кто пришёл из Vector Void.
+Если вы жили этой историей — приезжайте. Посмотрите своими глазами.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">TokenEater</span>
+        <span class="post-date">8 февраля 1995</span>
+      </div>
+      <div class="post-body">
+ХОТЬ БЫ РАЗ В ЖИЗНИ — Я ЕДУ.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Hyperframe</span>
+        <span class="post-date">8 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Я в Калифорнии, это 13 часов, но я уже собрал вещи.
+Если это реально Xxaagreus — я должен увидеть.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <!-- OTHER THREADS (SHORT FILLERS) -->
+
+  <div class="thread" id="thread-snackman">
+    <h2>Лучший порт Snack-Man: аркада vs домашние версии</h2>
+    <div class="thread-meta">Автор: 8bitFreak &nbsp; | &nbsp; создано: 14.05.1993</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">8bitFreak</span>
+        <span class="post-date">14 мая 1993</span>
+      </div>
+      <div class="post-body">
+Кто что думает: оригинальная аркадная версия Snack-Man против домашних портов (NES, Genesis, SNES)?
+Какая ближе всего к аркаде по ощущению управления и ИИ призраков?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ScoreChaser</span>
+        <span class="post-date">15 мая 1993</span>
+      </div>
+      <div class="post-body">
+Аркада вне конкуренции. Домашние версии всегда режут количество спрайтов и скорость.
+На SNES нормальная картинка, но паттерны призраков другие, нельзя применять те же маршруты.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CRT_Wizard</span>
+        <span class="post-date">16 мая 1993</span>
+      </div>
+      <div class="post-body">
+Плюс аркады — задержка ввода минимальная. На домашках есть ощутимый input lag от геймпада и телевизора.
+Если гонитесь за рекордами, только кабина. Для дивана — SNES-версия ок.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-astralvoid">
+    <h2>Помогите найти ROM The Astral Void (существует ли вообще?)</h2>
+    <div class="thread-meta">Автор: ROMHunter &nbsp; | &nbsp; создано: 02.07.1994</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ROMHunter</span>
+        <span class="post-date">2 июля 1994</span>
+      </div>
+      <div class="post-body">
+Кто-то вообще видел живую плату или ROM-дамп The Astral Void от Vertex Electronica?
+В списках прототипов иногда мелькает, но никто не даёт доказательств. Оно реально существовало
+как отдельная игра, или это просто ранняя версия Xxaagreus?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Sinkerly308</span>
+        <span class="post-date">3 июля 1994</span>
+      </div>
+      <div class="post-body">
+Я работал стажёром в Vertex летом 82-го. Astral Void была, но как внутренний билд.
+Летом 84-го всё что было по ней, можно сказать, влили в Xxaagreus. ROM-думпов вне студии не было.
+Если что-то всплывёт — это либо утечка, либо фейк.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-serpents">
+    <h2>Serpents &amp; Sepulchers — как пройти уровень с библиотекой</h2>
+    <div class="thread-meta">Автор: LabyrinthLord &nbsp; | &nbsp; создано: 10.09.1993</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">LabyrinthLord</span>
+        <span class="post-date">10 сентября 1993</span>
+      </div>
+      <div class="post-body">
+Застрял на уровне с библиотекой: там, где книги начинают падать с полок, а змеи вылезают из корешков.
+Я либо умираю от завала, либо меня догоняет таймер. Есть стабильная стратегия?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GuideWriter</span>
+        <span class="post-date">11 сентября 1993</span>
+      </div>
+      <div class="post-body">
+Держись правой стены, выбивай только красные книги — они замедляют падение остальных.
+Змей лучше оббегать: их урон маленький, а остановки стоят дороже. Если выбрать правильный маршрут,
+таймер остаётся с запасом в 12–15 секунд.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-cybertrax">
+    <h2>Cybertrax: ваши времена на трассе “Orion Loop”</h2>
+    <div class="thread-meta">Автор: TimeAttack &nbsp; | &nbsp; создано: 05.03.1995</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">TimeAttack</span>
+        <span class="post-date">5 марта 1995</span>
+      </div>
+      <div class="post-body">
+Давайте делиться ghost-times по Orion Loop. У меня пока лучший круг — 1:12:34 на жёлтом болиде.
+Кто-то выбивал ниже 1:10?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">Hyperframe</span>
+        <span class="post-date">7 марта 1995</span>
+      </div>
+      <div class="post-body">
+1:09:87, но это с почти идеальным драфтом и агрессивным использованием турбо на втором секторе.
+Главное — не тормозить в общем-то, а только сбрасывать газ. И не цеплять барьеры: они режут скорость сильнее, чем кажется.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-mousepuncher">
+    <h2>Mouse Puncher: есть ли скрытые комбо?</h2>
+    <div class="thread-meta">Автор: CheeseMaster &nbsp; | &nbsp; создано: 22.06.1993</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CheeseMaster</span>
+        <span class="post-date">22 июня 1993</span>
+      </div>
+      <div class="post-body">
+Кто-нибудь находил скрытые комбо в Mouse Puncher? В мануале ничего нет, но иногда у меня внезапно
+выходит удар, который сносит почти весь HP босса-крысы.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ArcadeHunter</span>
+        <span class="post-date">23 июня 1993</span>
+      </div>
+      <div class="post-body">
+Есть "сырный uppercut": два раза вниз, вперёд, удар. Работает только если шкала ярости мыши заполнена.
+На боссах ломает баланс, поэтому в турнирах его часто считают запрещённым.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-repair">
+    <h2>Ремонт старых кабинетов: чем чистить контакты плат?</h2>
+    <div class="thread-meta">Автор: CRT_Wizard &nbsp; | &nbsp; создано: 18.11.1993</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CRT_Wizard</span>
+        <span class="post-date">18 ноября 1993</span>
+      </div>
+      <div class="post-body">
+Для тех, кто сам чинит кабины: чем лучше всего чистить контакты плат и коннекторы?
+Не хочу использовать абразивы, чтобы не содрать дорожки. Есть проверенный способ?
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">SolderKing</span>
+        <span class="post-date">19 ноября 1993</span>
+      </div>
+      <div class="post-body">
+Изопропиловый спирт + мягкая ластиковая резинка для грубой очистки, потом ещё раз спиртом и сухой тряпкой.
+Никаких наждачек. Для сильно окислившихся контактов — контактный очиститель типа DeoxIT.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-photos">
+    <h2>Фото ваших локальных аркадных залов</h2>
+    <div class="thread-meta">Автор: ArcadeHunter &nbsp; | &nbsp; создано: 09.04.1994</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">ArcadeHunter</span>
+        <span class="post-date">9 апреля 1994</span>
+      </div>
+      <div class="post-body">
+Постим фотки своих аркад. Полароиды, сканы, что угодно. Хочу увидеть, как выглядят ваши "Галаксии".
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GlitchPriest</span>
+        <span class="post-date">12 апреля 1994</span>
+      </div>
+      <div class="post-body">
+Зал возле озера в моём городе уже закрыли, но у меня осталась фотка.
+Странно: на ней в углу виден автомат, которого я не помню. Экран полностью чёрный.
+Я думал, что это просто брак при проявке, но чем дольше смотрю, тем больше уверен, что там кто-то стоит.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-gamesplus">
+    <h2>Кто помнит GamesPLUS на SNES?</h2>
+    <div class="thread-meta">Автор: CartCollector &nbsp; | &nbsp; создано: 03.09.1994</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">CartCollector</span>
+        <span class="post-date">3 сентября 1994</span>
+      </div>
+      <div class="post-body">
+GamesPLUS на SNES кто-то вообще играл? У меня был картридж, но меню всегда казалось неполным,
+как будто там должны быть ещё игры или режимы.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">MenuGlitch</span>
+        <span class="post-date">5 сентября 1994</span>
+      </div>
+      <div class="post-body">
+Там были "серые" слоты в меню, которые иногда подсвечивались, если долго держать консоль включённой.
+Ни разу не смог загрузить оттуда игру, только зависания. Может, заготовка под DLC из будущего :)
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-warriors">
+    <h2>Warriors of History или Warriors of Future — что лучше и почему</h2>
+    <div class="thread-meta">Автор: PixelGeneral &nbsp; | &nbsp; создано: 21.12.1994</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">PixelGeneral</span>
+        <span class="post-date">21 декабря 1994</span>
+      </div>
+      <div class="post-body">
+Голосование: какая часть лучше — Warriors of History или Warriors of Future?
+История vs киберпанк, механика, баланс, любимые уровни.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">TimeTraveler</span>
+        <span class="post-date">23 декабря 1994</span>
+      </div>
+      <div class="post-body">
+History — лучше по дизайну уровней и музыке, Future — лучше по механике.
+Но финальный босс в Future до сих пор снится, слишком уж он похож на один старый автомат из моего детства.
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+  <div class="thread" id="thread-tuktuk">
+    <h2>Странные баги в Crazy Tuk-tuk (мне одному так повезло?)</h2>
+    <div class="thread-meta">Автор: GlitchPriest &nbsp; | &nbsp; создано: 14.02.1995</div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">GlitchPriest</span>
+        <span class="post-date">14 февраля 1995</span>
+      </div>
+      <div class="post-body">
+У кого-то в Crazy Tuk-tuk происходили странные вещи? Не обычные баги физики, а такие:
+иногда трасса зацикливается, и ты проезжаешь один и тот же дом бесконечно, пока не сбросишь игру.
+И один раз на тротуаре мелькнули люди в масках — на аркадной версии такого точно нет.
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <span class="post-user">BugTester</span>
+        <span class="post-date">16 февраля 1995</span>
+      </div>
+      <div class="post-body">
+Скорее всего, у тебя глючит плата или ROM. Но то, что ты описываешь, похоже на "кривой" debug-режим.
+Правда, люди в масках — это уже слишком. Может, кто-то шутит с изменённой версией игры?
+      </div>
+    </div>
+
+    <div class="back-top"><a href="#top">▲ Наверх</a></div>
+  </div>
+
+</div>
+</body>
+</html>
